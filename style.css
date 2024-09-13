@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#sidebar {
+    color: white;
+    height: 95vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.sec1 {
+    background-color: rgb(19, 17, 17);
+    height: 32vh;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 1rem;
+}
+.list {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.list h1 {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+.icon {
+    height: 30px;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+.sec2 {
+    background-color: rgb(19, 17, 17);
+    height: 62vh;
+    border-radius: 1rem;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area1 {
+    display: flex;
+    justify-content: space-between;
+}
+.area1 h2 {
+    cursor: pointer;
+}
+
+.area2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.area2 h4 {
+    margin: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.area3 button {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.area3 button:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+#main {
+    background-image: url("bg-color.png");
+    width: 74%;
+    height: 95vh;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.navbar-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.8rem;
+    list-style: none;
+}
+
+.signup {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup:hover, .login:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+.dark, .light {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    border-radius: 5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark:hover, .light:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+.center {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* max-height: calc(95vh - 70px);  Adjusts the height of the container to fit the screen */
+    height: 450px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Scrollbar styles for WebKit browsers */
+.center::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.center::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent scrollbar thumb */
+    border-radius: 4px; /* Rounded edges for the thumb */
+}
+
+.center::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5); /* Slightly more opaque on hover */
+}
+
+.center::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+.progress-bar {
+    background-color: transparent;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 60vw;
+    cursor: pointer;
+}
+
+.myicons img {
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.song-item {
+    height: 50px;
+    display: flex;
+    background-color: burlywood;
+    color: black;
+    margin: 12px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 34px;
+}
+
+.songimg {
+    width: 40px;
+    margin: 0 20px;
+    border-radius: 34px;
+}
+
+.songlistplay img {
+    padding-right: 1rem;
+    padding-bottom: 1px;
+    height: 60px;
+    cursor: pointer;
+}
